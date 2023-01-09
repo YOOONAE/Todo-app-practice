@@ -1,0 +1,71 @@
+/*  */
+
+.TodoBtn {
+    position: absolute;
+    height: 100%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 44px;
+    transition: all ease-in 0.25s;
+    border: 0px;
+}
+
+.TodoBtn.delete {
+    opacity: 0.5;
+    top: 50%;
+    right: 0;
+
+    background-color: #e0e8f5;
+}
+
+.TodoBtn.edit {
+    opacity: 0.4;
+    top: 50%;
+    right: 44px;
+
+    background-color: #e0e8f5;
+}
+
+.TodoBtn.delete:hover {
+    opacity: 1;
+    background-color: #f56468;
+}
+
+.TodoBtn.edit:hover {
+    opacity: 1;
+    background-color: #808690;
+}
+
+.TodoLi {
+    position: relative;
+    list-style-type: none;
+    display: block;
+    margin: 10px 0;
+    background: #e0e8f5;
+    border-radius: 3px;
+    padding-left: 38px;
+    /* custom checkbox width + 16 */
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 49px;
+    /* delete button + 5 */
+    overflow: hidden;
+    text-align: start;
+}
+
+
+
+
+.TodoLi.completed {
+    color: #888;
+    background: darkgrey;
+    text-decoration: line-through
+}
+
+
+
+.edit {
+    background-color: transparent;
+    border: 0px;
+}
+

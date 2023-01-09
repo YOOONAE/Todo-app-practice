@@ -1,0 +1,50 @@
+.TodoList-wrapper {
+    width: 400px;
+    max-width: 100%;
+    min-height: 500px;
+    margin: 20px auto 40px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 40px 20px;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+    background-color: #f4f7fc;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.TodoList-title {
+    font-size: 1.2em;
+    color: #f65c65;
+    font-weight: normal;
+}
+
+
+.TodoList-ul {
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(100%)
+    }
+
+    to {
+        transform: translateX(0%)
+    }
+}
+
+.TodoList-ul li {
+    list-style: none;
+    animation-name: slidein;
+    animation-duration: 0.3s;
+    opacity: 0;
+}
+
+.TodoList-ul li.show {
+    opacity: 1;
+}
+
+

@@ -10,8 +10,6 @@ class Todo extends Component {
             isCompleted: false,
             todo: ''
         }
-
-
         this.handleClickDelete = this.handleClickDelete.bind(this);
         this.handleClickEdit = this.handleClickEdit.bind(this);
         this.handleChange = this.handleChange.bind(this)

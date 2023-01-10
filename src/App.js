@@ -4,17 +4,16 @@ import "./App.css";
 
 class App extends Component {
   render() {
-    let i=0;
     const title = 'TODO-LIST';
     const title_array = [...title];
     
     const showTitle = title_array.map((text, i) => {
-      return <span style={{ animationDelay: `calc(0.1s * ${i+1})` }}>{text}</span>
+      return <span key={i} style={{ animationDelay: `calc(0.1s * ${i+1})` }}>{text}</span>
     })
 
     return (
       <div className="App">
-        <div class="wavy">
+        <div className="wavy">
           {showTitle}
         </div>
         <TodoList />
